@@ -25,7 +25,7 @@
       <option key="element" value="O"/>
       <option key="row" value="2"/>
       <option key="vdwtype" value="o3"/>
-      <parameter type="charge" unit="e" value="-0.82" uncertainty="0" minimum="0" maximum="0" ntrain="0" mutability="Fixed" nonnegative="no"/>
+      <parameter type="charge" unit="e" value="-0.82" uncertainty="0" minimum="-1" maximum="0" ntrain="0" mutability="Fixed" nonnegative="no"/>
       <parameter type="mass" unit="Da" value="15.9994" uncertainty="0" minimum="15.9994" maximum="15.9994" ntrain="0" mutability="Fixed" nonnegative="yes"/>
       <parameter type="zeta" unit="1/nm" value="0" uncertainty="0" minimum="0" maximum="20" ntrain="1" mutability="Bounded" nonnegative="yes"/>
     </particletype>
