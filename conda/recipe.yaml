@@ -1,0 +1,56 @@
+# Recipe for the conda package forcefields on the channel alexandriachemistry,
+# built with rattler-build from the top of the repository:
+#
+#   FORCEFIELDS_VERSION=2026.11.23 rattler-build build --recipe conda/recipe.yaml
+#
+# The package holds the force field files of this repository in
+# share/act/forcefields, in the same directory tree as here. The workflow
+# .github/workflows/conda.yml builds it and uploads it; the version comes
+# from the tag v<version>.
+
+context:
+  version: ${{ env.get("FORCEFIELDS_VERSION", default="0.0.dev") }}
+
+package:
+  name: forcefields
+  version: ${{ version }}
+
+source:
+  path: ..
+
+build:
+  number: 0
+  noarch: generic
+  script:
+    - dest="${PREFIX}/share/act/forcefields"
+    - mkdir -p "${dest}"
+    - |
+      find . -name '*.xml' -not -path './.github/*' -not -path './conda/*' | while read -r f; do
+          mkdir -p "${dest}/$(dirname "${f}")"
+          cp "${f}" "${dest}/${f}"
+      done
+    - cp LICENSE README.md "${dest}/"
+
+tests:
+  - package_contents:
+      files:
+        - share/act/forcefields/LICENSE
+        - share/act/forcefields/**/*.xml
+  - script:
+      - test -f "${PREFIX}/share/act/forcefields/Legacy/Water/SPC-Fw.xml"
+      - test -f "${PREFIX}/share/act/forcefields/Legacy/Water/q-SPC-Fw.xml"
+
+about:
+  homepage: https://github.com/AlexandriaChemistry/ForceFields
+  repository: https://github.com/AlexandriaChemistry/ForceFields
+  license: MIT
+  license_file: LICENSE
+  summary: Force field files for the Alexandria Chemistry Toolkit (ACT)
+  description: |
+    Force field files in the XML format of the Alexandria Chemistry Toolkit,
+    each with a checksum that ACT verifies. They are installed in
+    share/act/forcefields.
+
+extra:
+  recipe-maintainers:
+    - dspoel
