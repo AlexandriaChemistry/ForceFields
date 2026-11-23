@@ -2,7 +2,7 @@
 <!DOCTYPE alexandria_chemistry.dtd PUBLIC "alexandria_chemistry.dtd" "alexandria_chemistry.dtd">
 <alexandria_chemistry>
   <option key="reference" value="doi:10.1063/1.1805516"/>
-  <version checksum="d4c76ba3cda8fc636ccf46ca93d65427" timestamp="2026-11-23 16:00:49"/>
+  <version checksum="a38e462fec7bea5cdd58fbc2cb0e7015" timestamp="2026-11-23 17:14:41"/>
   <particletypes>
     <option key="chargedistribution" value="Point"/>
     <option key="epsilonr" value="1"/>
