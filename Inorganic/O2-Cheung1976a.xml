@@ -2,12 +2,12 @@
 <!DOCTYPE alexandria_chemistry.dtd PUBLIC "alexandria_chemistry.dtd" "alexandria_chemistry.dtd">
 <alexandria_chemistry>
   <option key="reference" value="doi:10.1016/0009-2614(76)80110-8"/>
-  <version checksum="10ccd20ca75b54791da4732ca818dbd0" timestamp="2026-11-23 18:44:54"/>
+  <version checksum="587f51a7dec365887b72dedaa9d97685" timestamp="2026-11-23 20:46:22"/>
   <particletypes>
     <option key="chargedistribution" value="Point"/>
     <option key="epsilonr" value="1"/>
     <option key="nexcl" value="1"/>
-    <particletype identifier="o2" type="Atom" description="chlorine">
+    <particletype identifier="o2" type="Atom" description="oxygen">
       <option key="acmtype" value="o2_z"/>
       <option key="atomnumber" value="8"/>
       <option key="bondtype" value="o2_b"/>

@@ -11,7 +11,8 @@ Force field files in the XML format of the
 | `Water/` | Water models, rigid, flexible and polarizable |
 
 The names of the files are those of the models, or the key of the paper they
-come from, such as `Orabi2020a`. Most files give the paper as an option of the
+come from, such as `Orabi2020a`. The `README.md` of each directory has the
+complete references of its force fields. Most files give the paper as an option of the
 force field, directly below the top-level element:
 
 ```xml
