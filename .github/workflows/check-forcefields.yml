@@ -2,10 +2,13 @@ name: Check force fields
 
 # Reads the force field files that a push or pull request adds or changes
 # and verifies that the checksum stored in each file matches its content.
-# Run by hand, it checks all force field files.
+# Run by hand or from another workflow (conda.yml), it checks all force
+# field files.
 
 on:
   push:
+    branches:
+      - '**'
     paths:
       - '**.xml'
       - '.github/**'
@@ -14,6 +17,7 @@ on:
       - '**.xml'
       - '.github/**'
   workflow_dispatch:
+  workflow_call:
 
 jobs:
   checksum:
