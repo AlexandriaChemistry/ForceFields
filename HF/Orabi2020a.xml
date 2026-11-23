@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE alexandria_chemistry.dtd PUBLIC "alexandria_chemistry.dtd" "alexandria_chemistry.dtd">
 <alexandria_chemistry>
-  <version checksum="a05a3aa0a0679b6a6b4c211848eb8da8" timestamp="2026-11-23 17:19:05"/>
+  <option key="reference" value="doi:10.1021/acs.jctc.0c00247"/>
+  <version checksum="c14d99f50aef4dc6b436ff3f675d2e6c" timestamp="2026-11-23 20:36:09"/>
   <particletypes>
     <option key="chargedistribution" value="Point"/>
     <option key="epsilonr" value="1"/>
