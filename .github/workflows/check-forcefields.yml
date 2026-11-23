@@ -1,0 +1,73 @@
+name: Check force fields
+
+# Reads the force field files that a push or pull request adds or changes
+# and verifies that the checksum stored in each file matches its content.
+# Run by hand, it checks all force field files.
+
+on:
+  push:
+    paths:
+      - '**.xml'
+      - '.github/**'
+  pull_request:
+    paths:
+      - '**.xml'
+      - '.github/**'
+  workflow_dispatch:
+
+jobs:
+  checksum:
+    # The osx-arm64 package of alexandria runs on the CPU without CUDA
+    runs-on: macos-latest
+    defaults:
+      run:
+        shell: bash -el {0}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Find the force field files to check
+        id: files
+        env:
+          EVENT: ${{ github.event_name }}
+          BEFORE: ${{ github.event.before }}
+          BASE: ${{ github.event.pull_request.base.sha }}
+          HEAD: ${{ github.sha }}
+        run: |
+          all=false
+          if [ "$EVENT" = "pull_request" ]; then
+              range="$BASE...$HEAD"
+          elif [ "$EVENT" = "push" ] && [ -n "$BEFORE" ] && \
+               git cat-file -e "$BEFORE^{commit}" 2>/dev/null; then
+              range="$BEFORE..$HEAD"
+          else
+              all=true
+          fi
+          if $all || ! git diff --quiet "${range:-HEAD}" -- .github; then
+              # By hand, on a new branch, or the check itself changed: all files
+              git ls-files -- '*.xml' > files.txt
+          else
+              git diff --name-only --diff-filter=ACMR "$range" -- '*.xml' > files.txt
+          fi
+          echo "Files to check:"
+          cat files.txt
+          echo "count=$(wc -l < files.txt | tr -d ' ')" >> "$GITHUB_OUTPUT"
+
+      - name: Install alexandria
+        if: steps.files.outputs.count != '0'
+        uses: mamba-org/setup-micromamba@v2
+        with:
+          environment-name: act
+          create-args: alexandria
+          condarc: |
+            channels:
+              - alexandriachemistry
+              - conda-forge
+            channel_priority: strict
+
+      - name: Verify checksums
+        if: steps.files.outputs.count != '0'
+        run: |
+          alexandria -version 2>&1 | head -20 || true
+          tr '\n' '\0' < files.txt | xargs -0 .github/scripts/check_forcefields.sh
