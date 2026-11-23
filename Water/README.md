@@ -14,19 +14,19 @@ The references of the force fields in this directory.
 
 `COS-G2.xml`: Charge-on-spring polarizable model COS/G2.
 
-- Haibo Yu and Wilfred F. van Gunsteren, "Charge-on-spring polarizable water models revisited: From water clusters to liquid water to ice", *The Journal of Chemical Physics* **121**, pages 9549–9564 (2004). [doi:10.1063/1.1805516](https://doi.org/10.1063/1.1805516)
+- Haibo Yu and Wilfred F. van Gunsteren, "Charge-on-spring polarizable water models revisited: From water clusters to liquid water to ice", *The Journal of Chemical Physics* **121**, pages 9549-9564 (2004). [doi:10.1063/1.1805516](https://doi.org/10.1063/1.1805516)
 
 ## COS-G3
 
 `COS-G3.xml`: Charge-on-spring polarizable model COS/G3.
 
-- Haibo Yu and Wilfred F. van Gunsteren, "Charge-on-spring polarizable water models revisited: From water clusters to liquid water to ice", *The Journal of Chemical Physics* **121**, pages 9549–9564 (2004). [doi:10.1063/1.1805516](https://doi.org/10.1063/1.1805516)
+- Haibo Yu and Wilfred F. van Gunsteren, "Charge-on-spring polarizable water models revisited: From water clusters to liquid water to ice", *The Journal of Chemical Physics* **121**, pages 9549-9564 (2004). [doi:10.1063/1.1805516](https://doi.org/10.1063/1.1805516)
 
 ## OPC
 
 `OPC.xml`: Rigid four-site model.
 
-- Saeed Izadi, Ramu Anandakrishnan and Alexey V. Onufriev, "Building Water Models: A Different Approach", *The Journal of Physical Chemistry Letters* **5**, pages 3863–3871 (2014). [doi:10.1021/jz501780a](https://doi.org/10.1021/jz501780a)
+- Saeed Izadi, Ramu Anandakrishnan and Alexey V. Onufriev, "Building Water Models: A Different Approach", *The Journal of Physical Chemistry Letters* **5**, pages 3863-3871 (2014). [doi:10.1021/jz501780a](https://doi.org/10.1021/jz501780a)
 
 ## OPC3
 
@@ -38,7 +38,7 @@ The references of the force fields in this directory.
 
 `OPC3-Pol.xml`: Polarizable three-site model.
 
-- Yeyue Xiong, Saeed Izadi and Alexey V. Onufriev, "Fast Polarizable Water Model for Atomistic Simulations", *Journal of Chemical Theory and Computation* **18**, pages 6324–6333 (2022). [doi:10.1021/acs.jctc.2c00378](https://doi.org/10.1021/acs.jctc.2c00378)
+- Yeyue Xiong, Saeed Izadi and Alexey V. Onufriev, "Fast Polarizable Water Model for Atomistic Simulations", *Journal of Chemical Theory and Computation* **18**, pages 6324-6333 (2022). [doi:10.1021/acs.jctc.2c00378](https://doi.org/10.1021/acs.jctc.2c00378)
 
 ## q-SPC-Fw
 
@@ -50,7 +50,7 @@ The references of the force fields in this directory.
 
 `SPC.xml`: Rigid three-site simple point charge model.
 
-- H. J. C. Berendsen, J. P. M. Postma, W. F. van Gunsteren and J. Hermans, "Interaction Models for Water in Relation to Protein Hydration", in *Intermolecular Forces*, edited by B. Pullman, The Jerusalem Symposia on Quantum Chemistry and Biochemistry, volume **14**, pages 331–342 (D. Reidel, Dordrecht, 1981). [doi:10.1007/978-94-015-7658-1_21](https://doi.org/10.1007/978-94-015-7658-1_21)
+- H. J. C. Berendsen, J. P. M. Postma, W. F. van Gunsteren and J. Hermans, "Interaction Models for Water in Relation to Protein Hydration", in *Intermolecular Forces*, edited by B. Pullman, The Jerusalem Symposia on Quantum Chemistry and Biochemistry, volume **14**, pages 331-342 (D. Reidel, Dordrecht, 1981). [doi:10.1007/978-94-015-7658-1_21](https://doi.org/10.1007/978-94-015-7658-1_21)
 
 ## SPC-Fw
 
@@ -62,31 +62,31 @@ The references of the force fields in this directory.
 
 `SPCE.xml`: Rigid three-site model SPC/E.
 
-- H. J. C. Berendsen, J. R. Grigera and T. P. Straatsma, "The missing term in effective pair potentials", *The Journal of Physical Chemistry* **91**, pages 6269–6271 (1987). [doi:10.1021/j100308a038](https://doi.org/10.1021/j100308a038)
+- H. J. C. Berendsen, J. R. Grigera and T. P. Straatsma, "The missing term in effective pair potentials", *The Journal of Physical Chemistry* **91**, pages 6269-6271 (1987). [doi:10.1021/j100308a038](https://doi.org/10.1021/j100308a038)
 
 ## SWM3
 
 `SWM3.xml`: Polarizable three-site Drude model.
 
-- Xiaojing Teng, Wenbo Yu and Alexander D. MacKerell, "Computationally Efficient Polarizable MD Simulations: A Simple Water Model for the Classical Drude Oscillator Polarizable Force Field", *The Journal of Physical Chemistry Letters* **16**, pages 1016–1023 (2025). [doi:10.1021/acs.jpclett.4c03451](https://doi.org/10.1021/acs.jpclett.4c03451)
+- Xiaojing Teng, Wenbo Yu and Alexander D. MacKerell, "Computationally Efficient Polarizable MD Simulations: A Simple Water Model for the Classical Drude Oscillator Polarizable Force Field", *The Journal of Physical Chemistry Letters* **16**, pages 1016-1023 (2025). [doi:10.1021/acs.jpclett.4c03451](https://doi.org/10.1021/acs.jpclett.4c03451)
 
 ## SWM4-DP
 
 `SWM4-DP.xml`: Polarizable four-site Drude model.
 
-- Guillaume Lamoureux, Alexander D. MacKerell and Benoît Roux, "A simple polarizable model of water based on classical Drude oscillators", *The Journal of Chemical Physics* **119**, pages 5185–5197 (2003). [doi:10.1063/1.1598191](https://doi.org/10.1063/1.1598191)
+- Guillaume Lamoureux, Alexander D. MacKerell and Benoît Roux, "A simple polarizable model of water based on classical Drude oscillators", *The Journal of Chemical Physics* **119**, pages 5185-5197 (2003). [doi:10.1063/1.1598191](https://doi.org/10.1063/1.1598191)
 
 ## SWM4-HLJ
 
 `SWM4-HLJ.xml`: Revised polarizable four-site Drude model.
 
-- Xiaojing Teng, Wenbo Yu and Alexander D. MacKerell Jr, "Revised 4-Point Water Model for the Classical Drude Oscillator Polarizable Force Field: SWM4-HLJ", *Journal of Chemical Theory and Computation* **20**, pages 10034–10044 (2024). [doi:10.1021/acs.jctc.4c00966](https://doi.org/10.1021/acs.jctc.4c00966)
+- Xiaojing Teng, Wenbo Yu and Alexander D. MacKerell Jr, "Revised 4-Point Water Model for the Classical Drude Oscillator Polarizable Force Field: SWM4-HLJ", *Journal of Chemical Theory and Computation* **20**, pages 10034-10044 (2024). [doi:10.1021/acs.jctc.4c00966](https://doi.org/10.1021/acs.jctc.4c00966)
 
 ## SWM4-NDP
 
 `SWM4-NDP.xml`: Polarizable four-site Drude model with a negative Drude particle.
 
-- Guillaume Lamoureux, Edward Harder, Igor V. Vorobyov, Benoît Roux and Alexander D. MacKerell, "A polarizable model of water for molecular dynamics simulations of biomolecules", *Chemical Physics Letters* **418**, pages 245–249 (2006). [doi:10.1016/j.cplett.2005.10.135](https://doi.org/10.1016/j.cplett.2005.10.135)
+- Guillaume Lamoureux, Edward Harder, Igor V. Vorobyov, Benoît Roux and Alexander D. MacKerell, "A polarizable model of water for molecular dynamics simulations of biomolecules", *Chemical Physics Letters* **418**, pages 245-249 (2006). [doi:10.1016/j.cplett.2005.10.135](https://doi.org/10.1016/j.cplett.2005.10.135)
 
 ## SWM6
 
@@ -98,13 +98,13 @@ The references of the force fields in this directory.
 
 `TIP3P.xml`: Rigid three-site model.
 
-- William L. Jorgensen, Jayaraman Chandrasekhar, Jeffry D. Madura, Roger W. Impey and Michael L. Klein, "Comparison of simple potential functions for simulating liquid water", *The Journal of Chemical Physics* **79**, pages 926–935 (1983). [doi:10.1063/1.445869](https://doi.org/10.1063/1.445869)
+- William L. Jorgensen, Jayaraman Chandrasekhar, Jeffry D. Madura, Roger W. Impey and Michael L. Klein, "Comparison of simple potential functions for simulating liquid water", *The Journal of Chemical Physics* **79**, pages 926-935 (1983). [doi:10.1063/1.445869](https://doi.org/10.1063/1.445869)
 
 ## TIP4P
 
 `TIP4P.xml`: Rigid four-site model.
 
-- William L. Jorgensen, Jayaraman Chandrasekhar, Jeffry D. Madura, Roger W. Impey and Michael L. Klein, "Comparison of simple potential functions for simulating liquid water", *The Journal of Chemical Physics* **79**, pages 926–935 (1983). [doi:10.1063/1.445869](https://doi.org/10.1063/1.445869)
+- William L. Jorgensen, Jayaraman Chandrasekhar, Jeffry D. Madura, Roger W. Impey and Michael L. Klein, "Comparison of simple potential functions for simulating liquid water", *The Journal of Chemical Physics* **79**, pages 926-935 (1983). [doi:10.1063/1.445869](https://doi.org/10.1063/1.445869)
 
 ## TIP4P-2005
 
@@ -122,17 +122,17 @@ The references of the force fields in this directory.
 
 `TIP4PEW-JC.xml`: TIP4P-Ew water with the alkali and halide ions of Joung and Cheatham for TIP4P-Ew.
 
-- Hans W. Horn, William C. Swope, Jed W. Pitera, Jeffry D. Madura, Thomas J. Dick, Greg L. Hura and Teresa Head-Gordon, "Development of an improved four-site water model for biomolecular simulations: TIP4P-Ew", *The Journal of Chemical Physics* **120**, pages 9665–9678 (2004). [doi:10.1063/1.1683075](https://doi.org/10.1063/1.1683075)
-- In Suk Joung and Thomas E. Cheatham, "Determination of Alkali and Halide Monovalent Ion Parameters for Use in Explicitly Solvated Biomolecular Simulations", *The Journal of Physical Chemistry B* **112**, pages 9020–9041 (2008). [doi:10.1021/jp8001614](https://doi.org/10.1021/jp8001614)
+- Hans W. Horn, William C. Swope, Jed W. Pitera, Jeffry D. Madura, Thomas J. Dick, Greg L. Hura and Teresa Head-Gordon, "Development of an improved four-site water model for biomolecular simulations: TIP4P-Ew", *The Journal of Chemical Physics* **120**, pages 9665-9678 (2004). [doi:10.1063/1.1683075](https://doi.org/10.1063/1.1683075)
+- In Suk Joung and Thomas E. Cheatham, "Determination of Alkali and Halide Monovalent Ion Parameters for Use in Explicitly Solvated Biomolecular Simulations", *The Journal of Physical Chemistry B* **112**, pages 9020-9041 (2008). [doi:10.1021/jp8001614](https://doi.org/10.1021/jp8001614)
 
 ## TIP5P
 
 `TIP5P.xml`: Rigid five-site model.
 
-- Michael W. Mahoney and William L. Jorgensen, "A five-site model for liquid water and the reproduction of the density anomaly by rigid, nonpolarizable potential functions", *The Journal of Chemical Physics* **112**, pages 8910–8922 (2000). [doi:10.1063/1.481505](https://doi.org/10.1063/1.481505)
+- Michael W. Mahoney and William L. Jorgensen, "A five-site model for liquid water and the reproduction of the density anomaly by rigid, nonpolarizable potential functions", *The Journal of Chemical Physics* **112**, pages 8910-8922 (2000). [doi:10.1063/1.481505](https://doi.org/10.1063/1.481505)
 
 ## TIP6P
 
 `TIP6P.xml`: Rigid six-site model for ice and water (NvdE).
 
-- Hiroki Nada and Jan P. J. M. van der Eerden, "An intermolecular potential model for the simulation of ice and water near the melting point: A six-site model of H2O", *The Journal of Chemical Physics* **118**, pages 7401–7413 (2003). [doi:10.1063/1.1562610](https://doi.org/10.1063/1.1562610)
+- Hiroki Nada and Jan P. J. M. van der Eerden, "An intermolecular potential model for the simulation of ice and water near the melting point: A six-site model of H2O", *The Journal of Chemical Physics* **118**, pages 7401-7413 (2003). [doi:10.1063/1.1562610](https://doi.org/10.1063/1.1562610)
