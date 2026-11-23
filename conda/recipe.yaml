@@ -37,8 +37,13 @@ tests:
         - share/act/forcefields/LICENSE
         - share/act/forcefields/**/*.xml
   - script:
-      - test -f "${PREFIX}/share/act/forcefields/Legacy/Water/SPC-Fw.xml"
-      - test -f "${PREFIX}/share/act/forcefields/Legacy/Water/q-SPC-Fw.xml"
+      # One file of each directory, in the same tree as in the repository
+      - test -f "${PREFIX}/share/act/forcefields/Alexandria/ACS-pg1.xml"
+      - test -f "${PREFIX}/share/act/forcefields/HF/Orabi2020a.xml"
+      - test -f "${PREFIX}/share/act/forcefields/Inorganic/N2-Cheung1975a.xml"
+      - test -f "${PREFIX}/share/act/forcefields/Water/SPC-Fw.xml"
+      - test -f "${PREFIX}/share/act/forcefields/Water/q-SPC-Fw.xml"
+      - test -f "${PREFIX}/share/act/forcefields/README.md"
 
 about:
   homepage: https://github.com/AlexandriaChemistry/ForceFields
