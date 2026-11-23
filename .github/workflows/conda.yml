@@ -4,7 +4,7 @@ name: Conda package
 # test it. A tag v<version> (for example v2026.11.23) uploads it to the
 # channel alexandriachemistry on anaconda.org with the label main, a run by
 # hand with the label that is given, dev by default. All force field files
-# must pass the checksum check first. The upload needs the repository secret
+# must pass the validation first. The upload needs the repository secret
 # ANACONDA_API_TOKEN.
 on:
   push:

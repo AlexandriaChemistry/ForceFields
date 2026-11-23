@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
-# Verify that each force field file given on the command line can be read
-# by ACT and that its stored checksum matches its content.
+# Validate each force field file given on the command line with
+#   alexandria edit_ff -ff file.xml -validate
+# which fails (exit status 1) when the stored checksum does not match the
+# contents, or when parameters are outside their bounds, duplicated,
+# negative where they may not be, or have a minimum above the maximum.
 # Usage: check_forcefields.sh file.xml [file.xml ...]
 # Needs the program alexandria in PATH.
 set -u
@@ -14,21 +17,20 @@ for ff in "$@"; do
         continue
     fi
     abs=$(cd "$(dirname "$ff")" && pwd)/$(basename "$ff")
-    log="$work/edit_ff.log"
-    rm -f "$log"
-    if ! grep -q '<version[^>]*checksum="[0-9a-f]\{32\}"' "$ff"; then
-        echo "::error file=$ff::no checksum in the version element of $ff"
-        nfail=$((nfail + 1))
-        continue
+    out="$work/out.txt"
+    (cd "$work" && alexandria edit_ff -ff "$abs" -validate -g edit_ff.log) > "$out" 2>&1
+    status=$?
+    # Versions of alexandria from before 1.95b-dev-20261123 neither check
+    # the checksum with -validate nor give an exit status.
+    if ! grep -q "^Checksum of " "$out"; then
+        echo "::error::alexandria edit_ff -validate did not check the checksum of $ff; alexandria is too old or could not read the file"
+        cat "$out"
+        exit 1
     fi
-    if ! (cd "$work" && alexandria edit_ff -ff "$abs" -g "$log") > "$work/out.txt" 2>&1; then
-        echo "::error file=$ff::alexandria could not read $ff"
-        cat "$work/out.txt" "$log" 2>/dev/null
-        nfail=$((nfail + 1))
-        continue
-    fi
-    if grep -q "Checksum mismatch" "$log"; then
-        echo "::error file=$ff::$(grep 'Checksum mismatch' "$log")"
+    if [ "$status" -ne 0 ]; then
+        echo "::error file=$ff::$ff did not pass alexandria edit_ff -validate"
+        # The report of the validation, without the banner
+        awk '/^Checksum of /{p=1} /^There are |^Converted old style|^Please check output/{p=0} p' "$out"
         nfail=$((nfail + 1))
         continue
     fi
@@ -36,6 +38,6 @@ for ff in "$@"; do
 done
 
 if [ "$nfail" -gt 0 ]; then
-    echo "$nfail force field file(s) failed the check."
+    echo "$nfail force field file(s) failed the validation."
     exit 1
 fi

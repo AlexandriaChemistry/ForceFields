@@ -1,7 +1,8 @@
 name: Check force fields
 
 # Reads the force field files that a push or pull request adds or changes
-# and verifies that the checksum stored in each file matches its content.
+# and validates them with alexandria edit_ff -validate: the stored checksum
+# must match the content and the parameters must be valid.
 # Run by hand or from another workflow (conda.yml), it checks all force
 # field files.
 
@@ -70,7 +71,7 @@ jobs:
               - conda-forge
             channel_priority: strict
 
-      - name: Verify checksums
+      - name: Validate the force fields
         if: steps.files.outputs.count != '0'
         run: |
           alexandria -version 2>&1 | head -20 || true
