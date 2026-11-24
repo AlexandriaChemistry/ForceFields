@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE alexandria_chemistry.dtd PUBLIC "alexandria_chemistry.dtd" "alexandria_chemistry.dtd">
 <alexandria_chemistry>
-  <option key="reference" value="Berendsen1981a"/>
+  <option key="reference" value="doi:10.1007/978-94-015-7658-1_21"/>
   <version checksum="04da3fb769e618b7dd8e3b6fe70742ed" timestamp="2026-11-23 15:43:10"/>
   <particletypes>
     <option key="chargedistribution" value="Point"/>
