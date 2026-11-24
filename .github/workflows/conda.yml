@@ -83,5 +83,5 @@ jobs:
           ANACONDA_API_TOKEN: ${{ secrets.ANACONDA_API_TOKEN }}
           LABEL: ${{ startsWith(github.ref, 'refs/tags/v') && 'main' || inputs.label }}
         run: |
-          anaconda upload --user alexandriachemistry --label ${LABEL} \
+          anaconda --verbose upload --user alexandriachemistry --label "${LABEL}" \
                    ${CONDA_OUT}/noarch/*.conda
