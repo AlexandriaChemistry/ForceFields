@@ -22,6 +22,18 @@ The references of the force fields in this directory.
 
 - Haibo Yu and Wilfred F. van Gunsteren, "Charge-on-spring polarizable water models revisited: From water clusters to liquid water to ice", *The Journal of Chemical Physics* **121**, pages 9549-9564 (2004). [doi:10.1063/1.1805516](https://doi.org/10.1063/1.1805516)
 
+## NES-LJ12_6
+
+`NES-LJ12_6.xml`: Polarizable model with a Drude shell on oxygen and a virtual site, Lennard-Jones 12-6 Van der Waals.
+
+- Alfred T. Nordman, Stefan Engblom and David van der Spoel, "Bayesian Modeling of Polarizable Water: Lessons for Force Field Development", *Journal of Chemical Theory and Computation* **22**, pages 5435-5447 (2026). [doi:10.1021/acs.jctc.6c00260](https://doi.org/10.1021/acs.jctc.6c00260)
+
+## NES-WBHAM
+
+`NES-WBHAM.xml`: Polarizable model with a Drude shell on oxygen and a virtual site, Wang-Buckingham Van der Waals.
+
+- Alfred T. Nordman, Stefan Engblom and David van der Spoel, "Bayesian Modeling of Polarizable Water: Lessons for Force Field Development", *Journal of Chemical Theory and Computation* **22**, pages 5435-5447 (2026). [doi:10.1021/acs.jctc.6c00260](https://doi.org/10.1021/acs.jctc.6c00260)
+
 ## OPC
 
 `OPC.xml`: Rigid four-site model.
