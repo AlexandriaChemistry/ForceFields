@@ -2,7 +2,7 @@
 <!DOCTYPE alexandria_chemistry.dtd PUBLIC "alexandria_chemistry.dtd" "alexandria_chemistry.dtd">
 <alexandria_chemistry>
   <option key="reference" value="doi:10.1063/1.445869"/>
-  <version checksum="c5afe4c5cc45dd68625fec4a8bfa2f4f" timestamp="2026-11-23 14:56:10"/>
+  <version checksum="b432b8a74e6ce9cf5aa63405553e1136" timestamp="2026-11-27 19:21:15"/>
   <particletypes>
     <option key="chargedistribution" value="Point"/>
     <option key="epsilonr" value="1"/>
@@ -76,6 +76,7 @@
   </interaction>
   <symmetric_charges>
     <sym_charge central="C" attached="H" numattach="3"/>
+    <sym_charge central="C" attached="H" numattach="2"/>
     <sym_charge central="N" attached="H" numattach="3"/>
     <sym_charge central="N" attached="H" numattach="2"/>
     <sym_charge central="N" attached="O" numattach="2"/>
