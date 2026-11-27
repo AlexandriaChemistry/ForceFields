@@ -124,6 +124,12 @@ The references of the force fields in this directory.
 
 - J. L. F. Abascal and C. Vega, "A general purpose model for the condensed phases of water: TIP4P/2005", *The Journal of Chemical Physics* **123**, page 234505 (2005). [doi:10.1063/1.2121687](https://doi.org/10.1063/1.2121687)
 
+## TIP4P-Flex
+
+`TIP4P-Flex.xml`: Flexible four-site model, with Morse bonds and cross terms between the bonds and the angle. It needs a version of ACT that has the potential CROSS_BOND_ANGLES.
+
+- C. P. Lawrence and J. L. Skinner, "Flexible TIP4P model for molecular dynamics simulation of liquid water", *Chemical Physics Letters* **372**, pages 842-847 (2003). [doi:10.1016/S0009-2614(03)00526-8](https://doi.org/10.1016/S0009-2614(03)00526-8)
+
 ## TIP4P-Ice
 
 `TIP4P-Ice.xml`: Rigid four-site model for ices, TIP4P/Ice.
