@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE alexandria_chemistry.dtd PUBLIC "alexandria_chemistry.dtd" "alexandria_chemistry.dtd">
+<alexandria_chemistry>
+  <option key="reference" value="doi:10.1021/acs.jctc.2c00529"/>
+  <version checksum="33979dac8448e11bffc6b112df83b7db" timestamp="2026-11-27 18:56:22"/>
+  <particletypes>
+    <option key="chargedistribution" value="Point"/>
+    <option key="epsilonr" value="1"/>
+    <option key="nexcl" value="2"/>
+    <particletype identifier="hw" type="Atom" description="hydrogen">
+      <option key="acmtype" value="ho_z"/>
+      <option key="atomnumber" value="1"/>
+      <option key="bondtype" value="h_b"/>
+      <option key="element" value="H"/>
+      <option key="row" value="1"/>
+      <option key="vdwtype" value="ho"/>
+      <parameter type="charge" unit="e" value="0.53242" uncertainty="0" minimum="0.53242" maximum="0.53242" ntrain="0" mutability="Fixed" nonnegative="no"/>
+      <parameter type="mass" unit="Da" value="1.007947" uncertainty="0" minimum="1.007947" maximum="1.007947" ntrain="0" mutability="Fixed" nonnegative="yes"/>
+      <parameter type="zeta" unit="1/nm" value="0" uncertainty="0" minimum="0" maximum="0" ntrain="1" mutability="Fixed" nonnegative="yes"/>
+    </particletype>
+    <particletype identifier="o3_s" type="Shell" description="sp3 oxygen shell">
+      <option key="atomnumber" value="0"/>
+      <option key="element" value="X"/>
+      <option key="row" value="0"/>
+      <option key="vdwtype" value="o3_s"/>
+      <parameter type="charge" unit="e" value="-1.62459" uncertainty="0" minimum="-1.62459" maximum="-1.62459" ntrain="0" mutability="Fixed" nonnegative="no"/>
+      <parameter type="mass" unit="Da" value="0.4" uncertainty="0" minimum="0.4" maximum="0.4" ntrain="0" mutability="Fixed" nonnegative="yes"/>
+      <parameter type="zeta" unit="1/nm" value="0" uncertainty="0" minimum="0" maximum="0" ntrain="0" mutability="Fixed" nonnegative="yes"/>
+    </particletype>
+    <particletype identifier="ow" type="Atom" description="sp3 oxygen">
+      <option key="acmtype" value="o3_z"/>
+      <option key="atomnumber" value="8"/>
+      <option key="bondtype" value="o3_b"/>
+      <option key="element" value="O"/>
+      <option key="poltype" value="o3_s"/>
+      <option key="row" value="2"/>
+      <option key="vdwtype" value="o3"/>
+      <parameter type="charge" unit="e" value="1.62459" uncertainty="0" minimum="1.62459" maximum="1.62459" ntrain="0" mutability="Fixed" nonnegative="no"/>
+      <parameter type="mass" unit="Da" value="15.5994" uncertainty="0" minimum="15.5994" maximum="15.5994" ntrain="0" mutability="Fixed" nonnegative="yes"/>
+      <parameter type="zeta" unit="1/nm" value="0" uncertainty="0" minimum="0" maximum="0" ntrain="0" mutability="Fixed" nonnegative="yes"/>
+    </particletype>
+    <particletype identifier="v3bw" type="VSite" description="Water bisector virtual site">
+      <option key="atomnumber" value="0"/>
+      <option key="bondtype" value="v3bw"/>
+      <option key="element" value="VS"/>
+      <option key="row" value="0"/>
+      <option key="vdwtype" value="v3bw"/>
+      <parameter type="charge" unit="e" value="-1.06484" uncertainty="0" minimum="-1.06484" maximum="-1.06484" ntrain="0" mutability="Fixed" nonnegative="no"/>
+      <parameter type="mass" unit="Da" value="0" uncertainty="0" minimum="0" maximum="0" ntrain="0" mutability="Fixed" nonnegative="yes"/>
+      <parameter type="zeta" unit="1/nm" value="0" uncertainty="0" minimum="0" maximum="0" ntrain="0" mutability="Fixed" nonnegative="yes"/>
+    </particletype>
+  </particletypes>
+  <interaction type="BONDS" function="QUARTIC_BONDS" canswap="true">
+    <parameterlist identifier="h_b~o3_b">
+      <parameter type="bondlength" unit="pm" value="94.57" uncertainty="0" minimum="94.57" maximum="94.57" ntrain="0" mutability="Fixed" nonnegative="yes"/>
+      <parameter type="cb0" unit="kJ/mol" value="0" uncertainty="0" minimum="0" maximum="0" ntrain="0" mutability="Fixed" nonnegative="no"/>
+      <parameter type="cb1" unit="kJ/mol/nm" value="0" uncertainty="0" minimum="0" maximum="0" ntrain="0" mutability="Fixed" nonnegative="no"/>
+      <parameter type="cb2" unit="kJ/mol/nm2" value="230931.9" uncertainty="0" minimum="230931.9" maximum="230931.9" ntrain="0" mutability="Fixed" nonnegative="no"/>
+      <parameter type="cb3" unit="kJ/mol/nm3" value="-6927957" uncertainty="0" minimum="-6927957" maximum="-6927957" ntrain="0" mutability="Fixed" nonnegative="no"/>
+      <parameter type="cb4" unit="kJ/mol/nm4" value="398357527.5" uncertainty="0" minimum="398357527.5" maximum="398357527.5" ntrain="0" mutability="Fixed" nonnegative="no"/>
+    </parameterlist>
+  </interaction>
+  <interaction type="ANGLES" function="QUARTIC_ANGLES" canswap="true">
+    <parameterlist identifier="h_b~o3_b~h_b">
+      <parameter type="angle" unit="degree" value="108.5" uncertainty="0" minimum="108.5" maximum="108.5" ntrain="0" mutability="Fixed" nonnegative="yes"/>
+      <parameter type="ct0" unit="kJ/mol" value="0" uncertainty="0" minimum="0" maximum="0" ntrain="0" mutability="Fixed" nonnegative="no"/>
+      <parameter type="ct1" unit="kJ/mol/rad" value="0" uncertainty="0" minimum="0" maximum="0" ntrain="0" mutability="Fixed" nonnegative="no"/>
+      <parameter type="ct2" unit="kJ/mol/rad2" value="188.3262" uncertainty="0" minimum="188.3262" maximum="188.3262" ntrain="0" mutability="Fixed" nonnegative="no"/>
+      <parameter type="ct3" unit="kJ/mol/rad3" value="-151.06415" uncertainty="0" minimum="-151.06415" maximum="-151.06415" ntrain="0" mutability="Fixed" nonnegative="no"/>
+      <parameter type="ct4" unit="kJ/mol/rad4" value="34.621353" uncertainty="0" minimum="34.621353" maximum="34.621353" ntrain="0" mutability="Fixed" nonnegative="no"/>
+    </parameterlist>
+  </interaction>
+  <interaction type="LINEAR_ANGLES" function="LINEAR_ANGLES" canswap="false"/>
+  <interaction type="PROPER_DIHEDRALS" function="FOURIER_DIHEDRALS" canswap="true"/>
+  <interaction type="IMPROPER_DIHEDRALS" function="HARMONIC_DIHEDRALS" canswap="idih"/>
+  <interaction type="VANDERWAALS" function="LJ12_6" canswap="true">
+    <combinationrule parameter="epsilon" rule="Geometric">
+      <parameter type="exponent" unit="" value="0" uncertainty="0" minimum="0" maximum="0" ntrain="0" mutability="Fixed" nonnegative="no"/>
+    </combinationrule>
+    <combinationrule parameter="sigma" rule="Arithmetic">
+      <parameter type="exponent" unit="" value="0" uncertainty="0" minimum="0" maximum="0" ntrain="0" mutability="Fixed" nonnegative="no"/>
+    </combinationrule>
+    <parameterlist identifier="ho">
+      <parameter type="epsilon" unit="kJ/mol" value="0" uncertainty="0" minimum="0" maximum="0" ntrain="0" mutability="Fixed" nonnegative="yes"/>
+      <parameter type="sigma" unit="nm" value="0" uncertainty="0" minimum="0" maximum="0" ntrain="0" mutability="Fixed" nonnegative="yes"/>
+    </parameterlist>
+    <parameterlist identifier="o3">
+      <parameter type="epsilon" unit="kJ/mol" value="0.83042" uncertainty="0" minimum="0.01" maximum="6" ntrain="0" mutability="Bounded" nonnegative="yes"/>
+      <parameter type="sigma" unit="nm" value="0.3195" uncertainty="0" minimum="0.05" maximum="1" ntrain="0" mutability="Bounded" nonnegative="yes"/>
+    </parameterlist>
+    <parameterlist identifier="o3_s">
+      <parameter type="epsilon" unit="kJ/mol" value="0" uncertainty="0" minimum="0" maximum="0" ntrain="0" mutability="Fixed" nonnegative="yes"/>
+      <parameter type="sigma" unit="nm" value="1" uncertainty="0" minimum="1" maximum="1" ntrain="0" mutability="Fixed" nonnegative="yes"/>
+    </parameterlist>
+    <parameterlist identifier="v3bw">
+      <parameter type="epsilon" unit="kJ/mol" value="0" uncertainty="0" minimum="0" maximum="0" ntrain="0" mutability="Fixed" nonnegative="yes"/>
+      <parameter type="sigma" unit="nm" value="1" uncertainty="0" minimum="1" maximum="1" ntrain="0" mutability="Fixed" nonnegative="yes"/>
+    </parameterlist>
+  </interaction>
+  <interaction type="POLARIZATION" function="POLARIZATION" canswap="true">
+    <parameterlist identifier="o3_s">
+      <parameter type="alpha" unit="Angstrom3" value="0.87641" uncertainty="0" minimum="0.4" maximum="2.5" ntrain="0" mutability="Fixed" nonnegative="yes"/>
+      <parameter type="fchyper" unit="kJ/mol nm4" value="0" uncertainty="0" minimum="0" maximum="500000000" ntrain="0" mutability="Fixed" nonnegative="yes"/>
+      <parameter type="rhyper" unit="nm" value="0.02" uncertainty="0" minimum="0" maximum="0.05" ntrain="0" mutability="Fixed" nonnegative="yes"/>
+    </parameterlist>
+  </interaction>
+  <interaction type="VSITE3S" function="VSITE3S" canswap="false">
+    <parameterlist identifier="h_b~o3_b~h_b!v3bw">
+      <parameter type="vs3sa" unit="" value="0.17268" uncertainty="0" minimum="0.17268" maximum="0.17268" ntrain="0" mutability="Fixed" nonnegative="no"/>
+    </parameterlist>
+  </interaction>
+  <interaction type="ELECTRONEGATIVITYEQUALIZATION" function="" canswap="true">
+    <parameterlist identifier="ho_z">
+      <parameter type="chi" unit="eV" value="3.5" uncertainty="0" minimum="2" maximum="5" ntrain="1" mutability="Bounded" nonnegative="yes"/>
+      <parameter type="eta" unit="eV/e" value="15" uncertainty="0" minimum="6" maximum="24" ntrain="1" mutability="Bounded" nonnegative="yes"/>
+    </parameterlist>
+    <parameterlist identifier="o3_z">
+      <parameter type="chi" unit="eV" value="6.5" uncertainty="0" minimum="4" maximum="9" ntrain="1" mutability="Bounded" nonnegative="yes"/>
+      <parameter type="eta" unit="eV/e" value="15" uncertainty="0" minimum="6" maximum="24" ntrain="1" mutability="Bounded" nonnegative="yes"/>
+    </parameterlist>
+  </interaction>
+  <symmetric_charges>
+    <sym_charge central="C" attached="H" numattach="3"/>
+    <sym_charge central="N" attached="H" numattach="3"/>
+    <sym_charge central="N" attached="H" numattach="2"/>
+    <sym_charge central="N" attached="O" numattach="2"/>
+    <sym_charge central="O" attached="H" numattach="2"/>
+    <sym_charge central="C" attached="F" numattach="3"/>
+    <sym_charge central="C" attached="Cl" numattach="3"/>
+    <sym_charge central="C" attached="Br" numattach="3"/>
+    <sym_charge central="C" attached="I" numattach="3"/>
+    <sym_charge central="Si" attached="H" numattach="3"/>
+  </symmetric_charges>
+</alexandria_chemistry>

@@ -88,6 +88,12 @@ The references of the force fields in this directory.
 
 - Guillaume Lamoureux, Alexander D. MacKerell and Benoît Roux, "A simple polarizable model of water based on classical Drude oscillators", *The Journal of Chemical Physics* **119**, pages 5185-5197 (2003). [doi:10.1063/1.1598191](https://doi.org/10.1063/1.1598191)
 
+## SWM4-Fw
+
+`SWM4-Fw.xml`: Flexible polarizable four-site Drude model, with quartic bond and angle potentials.
+
+- Xinyan Wang and Ying-Lung Steve Tse, "Flexible Polarizable Water Model Parameterized via Gaussian Process Regression", *Journal of Chemical Theory and Computation* **18**, pages 7155-7165 (2022). [doi:10.1021/acs.jctc.2c00529](https://doi.org/10.1021/acs.jctc.2c00529)
+
 ## SWM4-HLJ
 
 `SWM4-HLJ.xml`: Revised polarizable four-site Drude model.
