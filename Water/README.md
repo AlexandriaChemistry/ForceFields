@@ -88,6 +88,12 @@ The references of the force fields in this directory.
 
 - Guillaume Lamoureux, Alexander D. MacKerell and Benoît Roux, "A simple polarizable model of water based on classical Drude oscillators", *The Journal of Chemical Physics* **119**, pages 5185-5197 (2003). [doi:10.1063/1.1598191](https://doi.org/10.1063/1.1598191)
 
+## SWM4-Fw
+
+`SWM4-Fw.xml`: Flexible polarizable four-site Drude model, with quartic bond and angle potentials.
+
+- Xinyan Wang and Ying-Lung Steve Tse, "Flexible Polarizable Water Model Parameterized via Gaussian Process Regression", *Journal of Chemical Theory and Computation* **18**, pages 7155-7165 (2022). [doi:10.1021/acs.jctc.2c00529](https://doi.org/10.1021/acs.jctc.2c00529)
+
 ## SWM4-HLJ
 
 `SWM4-HLJ.xml`: Revised polarizable four-site Drude model.
@@ -123,6 +129,12 @@ The references of the force fields in this directory.
 `TIP4P-2005.xml`: Rigid four-site model TIP4P/2005.
 
 - J. L. F. Abascal and C. Vega, "A general purpose model for the condensed phases of water: TIP4P/2005", *The Journal of Chemical Physics* **123**, page 234505 (2005). [doi:10.1063/1.2121687](https://doi.org/10.1063/1.2121687)
+
+## TIP4P-Flex
+
+`TIP4P-Flex.xml`: Flexible four-site model, with Morse bonds and cross terms between the bonds and the angle. It needs a version of ACT that has the potential CROSS_BOND_ANGLES.
+
+- C. P. Lawrence and J. L. Skinner, "Flexible TIP4P model for molecular dynamics simulation of liquid water", *Chemical Physics Letters* **372**, pages 842-847 (2003). [doi:10.1016/S0009-2614(03)00526-8](https://doi.org/10.1016/S0009-2614(03)00526-8)
 
 ## TIP4P-Ice
 
